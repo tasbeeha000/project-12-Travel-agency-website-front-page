@@ -1,0 +1,450 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:open-sans;
+    src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    /* background-color: rgb(110, 233, 255); */
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-items ul {
+    display: flex;
+
+}
+
+.nav-items ul li{
+    list-style: none;
+    margin-left: 35px ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: open-sans;
+    transition: text-decoration 0.3s;
+} 
+.nav-items ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+
+.logo-img{
+    height: 90px;
+    margin-left: 10px ;
+    mix-blend-mode: multiply;
+}
+
+.checkbtn{
+    font-size: 16px;
+
+color: white;
+ display: none;
+}
+#check{
+    display: none;
+}
+.colors{
+    color: black;
+}
+.icon{
+    margin-top: 100px;
+}
+#text{
+text-align: center;
+top: 40%;
+left: 0;
+width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+}
+#back-video{
+    position: fixed; 
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+
+}
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.explore-button{
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 10PX;
+    font-family: open-sans;
+    padding: 10px 40px 10px 40px ;
+    background-color: transparent;
+    border: white 1px solid;
+    color: azure;
+    font-family: open-sans;
+    transition: 0.5s;
+    font-weight: 500;
+
+ 
+
+   
+}
+.explore-button:hover{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(67, 211, 211) ;
+}
+
+.book-button{
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-top: 0px;
+    font-family: open-sans;
+    padding: 10px 40px 10px 40px ;
+    background-color: rgb(67, 211, 211);
+    border: none;
+    color: azure;
+    font-family: open-sans;
+    transition: 0.5s;
+   
+}
+.book-button:hover{
+
+        cursor: pointer;
+    background-color: white ;
+    color: aqua;
+    
+}
+#head-text{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: open-sans;
+    font-weight: 600;
+}
+#head-text-des{
+    line-height: 40px;
+}
+.search-bar-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  gap: 20px;
+   
+}
+
+#search-bar{
+    border: white;
+    background-color: white;
+    padding: 10px 160px 10px 160px ;
+}
+
+@media screen and (max-width:920px ) {
+    
+    .nav-items ul li{
+        margin-left: 15px ;
+
+     
+    }  
+    .book-button{
+       
+        margin-left: 70px;
+    
+        
+    }
+
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+}
+@media screen and (max-width:750px ) {
+    
+     
+    .book-button{
+       
+        margin-left: 50px;
+    
+        
+    }
+
+    .navbar{
+     
+      font-size: 13px;
+  
+    }
+    .logo-img{
+        height: 60px;
+      
+    }
+    .book-button{
+     
+        margin-left: 30px;
+  
+        padding: 6px 20px 6px 20px ;
+      
+       
+    }
+
+    #head-text{
+        font-size: 40px;
+    }
+    #search-bar{
+        border: white;
+        background-color: white;
+        padding: 10px 100px 10px 100px ;
+    }
+    #head-text-des{
+        font-size: 14px;
+    }
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+}
+
+
+@media screen and (max-width:575px ) {
+    
+    .book-button{
+    
+    font-size: 10px;
+        margin-left: 30px;
+  
+        padding: 6px 15px 6px 15px ;
+    
+       
+    }
+
+    .navbar{
+     
+      font-size: 7px;
+  
+    }
+    .logo-img{
+        height: 40px;
+      
+    }
+ 
+    #head-text{
+        font-size: 30px;
+    }
+    #head-text-des{
+        font-size: 11px;
+    }
+    #search-bar{
+        border: white;
+        background-color: white;
+        padding: 7px 60px 7px 60px ;
+    }
+
+    .explore-button{
+        
+       font-size: 10px;
+        padding: 7px 30px 7px 30px ;
+        font-weight: 500;
+    }
+    .search-bar-section{
+      gap: 10px;
+       
+    }
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+}
+
+
+@media screen and (max-width:575px ) {
+    
+    .book-button{
+    
+    font-size: 10px;
+        margin-left: 30px;
+  
+        padding: 6px 15px 6px 15px ;
+    
+       
+    }
+
+    .navbar{
+     
+      font-size: 7px;
+  
+    }
+    .logo-img{
+        height: 40px;
+      
+    }
+ 
+    #head-text{
+        font-size: 30px;
+    }
+    #head-text-des{
+        font-size: 11px;
+    }
+    #search-bar{
+        border: white;
+        background-color: white;
+        padding: 7px 60px 7px 60px ;
+    }
+
+    .explore-button{
+        
+       font-size: 10px;
+        padding: 7px 30px 7px 30px ;
+        font-weight: 500;
+    }
+    .search-bar-section{
+      gap: 10px;
+       
+    }
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+}@media screen and (max-width:575px ) {
+    
+    .book-button{
+    
+    font-size: 10px;
+        margin-left: 30px;
+  
+        padding: 6px 15px 6px 15px ;
+    
+       
+    }
+
+    .navbar{
+     
+      font-size: 7px;
+  
+    }
+    .logo-img{
+        height: 40px;
+      
+    }
+ 
+    #head-text{
+        font-size: 30px;
+    }
+    #head-text-des{
+        font-size: 11px;
+    }
+    #search-bar{
+        border: white;
+        background-color: white;
+        padding: 7px 60px 7px 60px ;
+    }
+
+    .explore-button{
+        
+       font-size: 10px;
+        padding: 7px 30px 7px 30px ;
+        font-weight: 500;
+    }
+    .search-bar-section{
+      gap: 10px;
+       
+    }
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+}
+@media screen and (max-width:455px ) {
+    
+    .book-button{
+    
+    font-size: 6px;
+        margin-left: 20px;
+  margin-right: 7px;
+        padding: 6px 15px 6px 15px ;
+    
+       
+    }
+
+    .navbar{
+     
+      font-size: 8px;
+  
+    }
+    .logo-img{
+        height: 30px;
+      
+    }
+ 
+    #head-text{
+        font-size: 30px;
+    }
+    #head-text-des{
+        font-size: 9px;
+    }
+    #search-bar{
+        border: white;
+        background-color: white;
+        padding: 5px 40px 5px 40px ;
+    }
+
+    .explore-button{
+        
+       font-size: 10px;
+        padding: 7px 20px 7px 20px ;
+        font-weight: 500;
+    }
+    .search-bar-section{
+      gap: 7px;
+       
+    }
+    #back-video{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+
+}
+
+
+
+@media screen and (max-width:350px ) {
+    .navbar{
+     
+      font-size: 6px;
+  
+    }
+    
+ 
+    #head-text{
+        font-size: 30px;
+    }
+    #head-text-des{
+        font-size: 9px;
+    }
+  
+}
+
